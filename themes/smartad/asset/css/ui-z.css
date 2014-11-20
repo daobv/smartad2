@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+.f-8{font-size:8px;}
+.f-9{font-size:9px;}
+.f-10{font-size:10px;}
+.f-11{font-size:11px;}
+.f-12{font-size:12px;}
+.f-13{font-size:13px;}
+.f-14{font-size:14px;}
+.f-15{font-size:15px;}
+.f-16{font-size:16px;}
+.f-17{font-size:17px;}
+.f-18{font-size:18px;}
+.f-19{font-size:19px;}
+.f-20{font-size:20px;}
+.f-21{font-size:21px;}
+.f-22{font-size:22px;}
+.f-23{font-size:23px;}
+.f-24{font-size:24px;}
+.f-25{font-size:25px;}
+.f-26{font-size:26px;}
+.f-27{font-size:27px;}
+.f-28{font-size:28px;}
+.f-50{font-size:50px;}
+strong,b,
+.bold{font-weight:bold!important;}
+em,i,
+.fontItalic{font-style:italic; line-height: 18px;}
+.textJustify{text-align:justify;}
+.textRight{text-align:right;}
+.texUnder{text-decoration:underline;}
+.textNomal{font-weight:normal;}
+.textLeft{text-align:left;}
+.textIdent{text-indent: 20px;}
+.textCter{text-align:center;}
+.textTrans{text-transform:uppercase;}
+.grayColor {color:Gray;}
+/*.textshadow{text-shadow:#666 0 0 5px;}*/
+hr {
+color:#fff;
+background:transparent;
+margin:0 0 0.5em 0;
+padding:0 0 0.5em 0;
+border-bottom:1px #eee solid;
+}
+
+h1,h2,h3,h4,h5,h6 {font-family: Tahoma, Geneva, sans-serif; font-weight:normal; padding:0; margin:0;}
+
+h1 {font-size:18px; font-weight:bold;}  
+h2 {font-size:14px; display:block;}   
+h3 {font-size:13px;}                  
+h4 {font-size:12px; line-height:normal}            
+h5 {font-size:11px; }              
+h6 {font-size:10px; }  
+.pad2{padding:2px;}
+.padB2{padding-bottom:2px;}
+.padT2{padding-top:2px;}
+.padL15{padding-left:15px;}
+.pad4{padding:4px;}
+.pad6{padding:6px;}
+.pad8{padding:8px;}
+.padT4{padding-top:4px;}
+.padB4{padding-bottom:4px;}
+.padT8{padding-top:8px;}
+.padB8{padding-bottom:8px;}
+.padT6{padding-top:6px;}
+.padB6{padding-bottom:6px;}
+.pad10{padding:10px;}
+.padB10{padding-bottom:10px;}
+.padT10{padding-top:10px;}
+.padT15{padding-top:15px;}
+.padTb2{padding: 2px 0 2px 0;}
+.padTb4{padding: 4px 0 4px 0;}
+.padTb6{padding: 6px 0 6px 0;}
+.padTb8{padding: 8px 0 8px 0;}
+.padTb10{padding: 10px 0 10px 0;}
+.pad15{padding:15px;}
+.padB15{padding-bottom:15px;}
+.pad20{padding:20px;}
+.padT20{padding-top:20px;}
+.padB20{padding-bottom:20px;}
+.pad30{padding:30px;}
+.padT30{padding-top:30px;}
+.padB30{padding-bottom:30px;}
+.padL4{padding-left:4px;}
+.padL6{padding-left:6px;}
+.padL8{padding-left:8px;}
+.padL10{padding-left:10px;}
+.padR12{padding-right:12px;}
+.padL20{padding-left:20px;}
+.padL30{padding-left:30px;}
+.padR4{padding-right:4px;}
+.padR6{padding-right:6px;}
+.padR8{padding-right:8px;}
+.padR10{padding-right:10px;}
+.padR20{padding-right:20px;}
+.padR30{padding-right:30px;}
+.lineH18{line-height:18px;}
+.lineH20{line-height:20px;}
+.lineH24{line-height:24px;}
+.lineH30{line-height:30px;}
+.lineH40{line-height:40px;}
+a,img{border:none; text-decoration:none}
+.clearfix{clear:both;}
+.fLeft{float:left;}
+.fRight{float:right;}
+.clorF{color:#FFF;}
+a.clorF{color:#FFF;}
+a.clorF:hover{color:#FFF; text-decoration:underline;}
+.clor9{color:#999;}
+a.clor9{color:#999;}
+a.clor9:hover{color:#999;text-decoration:underline}
+.clorRed{color:#ff4200;}
+a.clorRed{color:#ff4200;}
+a.clorRed:hover{color:#ff4200; text-decoration:underline;}
+.clorBk{color:#000;}
+a.clorBk{color:#000;}
+a.clorBk:hover{color:#000; text-decoration:underline;}
+.clor6{color:#666;}
+a.clor6{color:#666;}
+a.clor6:hover{color:#666; text-decoration:underline}
+.clorOr{color:#f8882c;}
+a.clorOr{color:#f8882c;}
+a.clorOr:hover{color:#f8882c; text-decoration:underline;}
+.clor3{color:#333;}
+a.clor3{color:#333;}
+a.clor3:hover{color:#333; text-decoration:none;}
+.clorMem{color:#e6e6e6;}
+a.clorMem{color:#e6e6e6;}
+a.clorMem:hover{color:#e6e6e6; text-decoration:underline;}
+.clorBlue{color:#072a9d;}
+a.clorBlue{color:#072a9d;}
+a.clorBlue:hover{color:#072a9d; text-decoration:underline;}
+select,
+.textboxShare{ background: none repeat scroll 0 0 #FFFFFF; border:1px solid #7f9db9; padding:2px; color:#999594; font-size:12px; font-family:"Arial";}
+select{height:24px;}
+.clorGre{color:#13a89e;}
+a.clorGre{color:#13a89e;}
+a.clorGre:hover{color:#13a89e; text-decoration:underline}
+.color13{color:#2a5db0;}
+a.color13{color:#2a5db0;}
+a.color13:hover{text-decoration:underline;}
+
+.statitic-datefrom { display: inline-block; padding: 5px 5px 0; float: right; height: 35px; background-color: #E4E4E4; margin: 10px 7px 10px 0; font-size: 13px; }
+
+.aOnload { background: url("../images/ArrTopdown.gif") no-repeat; width: 9px; height: 14px; }
+.aDesc { background: url("../images/arrTootips.png") no-repeat; width: 11px; height: 7px; }

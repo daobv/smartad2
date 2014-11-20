@@ -1,0 +1,260 @@
+* {margin: 0; padding: 0;}
+.header a {color:#535353!important; text-transform: uppercase;}
+.header li:last-child a {text-transform: none!important;}
+-------------------------------------------------- */
+body {font-family: 'Roboto'!important; padding-bottom: 0!important;}
+html {font-family: 'Roboto'!important;}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {font-family: 'Roboto', sans-serif!important;}
+.header {height: 100px; background-color:#ffffff;}
+.header .logo {background:url(../images/logo.png) no-repeat; text-indent:-99999px; height: 40px; width: 191px;}
+.header .container {margin-top: 29px;}
+.header .dropdown-menu li {background: url(../images/list_style.png) no-repeat left center; padding-left: 10px; margin-left: 7px;}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 440px;
+  margin-bottom: 20px;
+  width: auto;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 440px;
+  background-color: #fff;
+  width: auto;
+}
+.carousel-inner .item img {
+    height: 440px!important;
+    left: 0;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    width: auto;
+}
+.slide {}
+.header {margin-bottom: 0!important;}
+.header .btn-lg, .btn-group-lg>.btn {height: 41px; line-height: 41px; font-size: 14px; font-weight: 400; padding: 0 10px; margin-right: 5px;}
+.header .btn-lg {}
+.header .nav-pills>li.active>a {background: none; border-bottom:5px solid #df691a; border-radius:0; -webkit-border-radius:0; -moz-border-radius: 0; color:#535353;}
+.header .nav-pills>li.active>a:hover {background:none; color:#535353;}
+.header .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {background-color: #ecf0f1!important;}
+.header .dropdown-menu>li>a {padding: 10px 0 10px 5px}
+.header li.login .dropdown-menu li {padding-left: 0; background:none; margin-left: 0;}
+li.login .form-group {margin-bottom: 5px;}
+.carousel-control .glyphicon-circle-arrow-left, .carousel-control .glyphicon-circle-arrow-right {
+    position:absolute;
+    top:50%;
+    z-index:5;
+    display:inline-block
+}
+.carousel-control .glyphicon-circle-arrow-left {
+    left:50%
+}
+.icon-next, .carousel-control .glyphicon-circle-arrow-right{
+    right:50%
+}
+.carousel-control.left {
+    background-image: none!important;
+}
+
+.carousel-control.right {
+    left: auto;
+    right: 0;
+    background-image: none!important;
+}
+
+.carousel-control:hover, .carousel-control:focus {
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.9;
+    filter: alpha(opacity=90)
+}
+.header .btn-default {background:#4e5d6c; border: medium none;}
+.header .btn-primary {background:#5bc0de; border:medium none;}
+.marketing .col-lg-4 {text-align: left!important;}
+.marketing .col-lg-4 p {margin-left: 0!important;}
+h2, .h2 {font-size: 19px!important; font-weight: 700!important; text-transform: uppercase;}
+footer {background:#4e5d6c; padding-bottom: 10px; color:white;  font-weight: 300;}
+footer .container {padding-top: 20px;}
+footer a {color:#fff; font-weight: 300;}
+footer a:hover {text-decoration: none;}
+.social a i {border-radius: 50px; border:2px solid #fff; background:transparent; width: 30px; height: 30px; text-align: center; line-height: 30px; margin-right: 5px; margin-left: 10px;}
+
+/* slide */
+/* carousel */
+/* Clients
+-------------------------------------------------- */
+.slide_partner {margin-bottom: 30px; padding: 0!important;}
+.section_header {
+  width: 100%;
+  margin: 10px 0 20px 0;
+
+} 
+  .section_header h3 {
+    color: #646464;
+    font-weight: 300;
+    font-size: 25px;
+    padding-bottom: 0px;
+    display: inline-block;
+    border-bottom: 1px solid #b3b3b3;
+    margin: 0; }   
+.client .img {
+    height: 76px;
+    width: 138px;
+    cursor: pointer;
+    -webkit-transition: box-shadow .1s linear;
+    -moz-transition: box-shadow .1s linear;
+    transition: box-shadow .1s linear; }
+.client .img:hover {
+      cursor: pointer;
+      /*box-shadow: 0px 0px 2px 0px rgb(155, 155, 155);*/
+      border-radius: 8px; }
+.client .client1 {
+    background: url("../images/client1.png") 0 -75px; }
+.client .client1:hover {
+      background-position: 1px 0px; }
+.client .client2 {
+    background: url("../images/client2.png") 0 -75px; }
+.client .client2:hover {
+      background-position: -1px 0px; }
+.client .client3 {
+    background: url("../images/client3.png") 0 -76px; }
+.client .client3:hover {
+      background-position: 0px 0px; }
+
+/*---Login---*/
+.login_w {background: url(../images/login_bg.jpg) repeat center bottom #000; min-height: 700px;}
+.logo_login {text-align:center;}
+.login_wrap {padding: 20px; background:#fff; width: 400px; margin-top: 80px; border-radius: 5px; -webkit-border-radius:5px;}
+.login h2 {text-align: center;}
+.login_w .btn-lg {padding-top:10px; padding-bottom:10px;}
+.colorgraph {
+  height: 5px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+
+/* Content View */
+.text_info {text-align: justify; line-height: 30px;}
+.cate {padding-left: 0px!important; padding-right: 0px!important;}
+.cate .breadcrumb {border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; padding-right: 0px!important; width: 98%;}
+.cate .m {padding: 0px!important; margin-bottom: 20px;}
+.cate .info_m {margin-top: -20px;}
+.confirm a {color:#e74c3c!important;}
+/* Dang ky */
+
+.cate .b1 {padding-left: 0px!important;}
+.cate .b4 {padding-right: 0px!important;}
+span.red {color: red;}
+.h32 {height: 32px;}
+span.cf {margin-bottom: 10px; display: inline-block;}
+span.f12 {font-size:12px; margin-left: 5px;}
+.confirm {margin-bottom: 20px;}
+.confirm hr {margin-top: 10px!important; margin-bottom:10px!important;}
+.popup {text-align: center;}
+.popup .modal-body {padding: 10px!important; line-height: 30px;}
+.popup .modal-footer {text-align: center; margin-top: 0px!important;}
+.popup .modal-footer .btn-primary {width: 100px;}
+.cate .form-group span {font-size: 12px; display: inline-block; margin-top: 7px;}
+:focus {
+  -moz-outline-style: none;
+}
+:-moz-any-link:focus {
+  outline: none;
+}
+a:active {
+  outline: none;
+}
+.navbar-toggle .icon-bar {background: #fff}
+.navbar-toggle {background-color: #4d5c6b!important;}
+.carousel-control .glyphicon-circle-arrow-left, .carousel-control .glyphicon-circle-arrow-right {
+        width:30px;
+        height:30px;
+        margin-top:-15px;
+        margin-left:-15px;
+        font-size:30px
+    }
+.carousel-inner .item a img {width:auto; max-width: none!important;}
+@media (max-width: 991px) {
+.slide_partner .row {
+    text-align: center; }
+.client {
+    text-align: center;
+    margin-bottom: 15px;
+    display: inline-block;
+    margin-right: 10px;
+    float: none;}
+    .header .logo {width: 120px; background-size:120px; margin-top: 5px;}
+    .nav {margin-right: -30px!important;}
+    .l40 {left: -50%!important;}
+    .slide_partner .row {margin-right: 0!important;}
+    .marketing .col-lg-4 p {margin-right: 0!important;}
+    .marketing .row {margin-right: 0!important;}
+} 
+@media screen and (max-width:768px) {
+/*    .carousel-control .glyphicon-circle-arrow-left, .carousel-control .glyphicon-circle-arrow-right {
+        width:30px;
+        height:30px;
+        margin-top:-15px;
+        margin-left:-15px;
+        font-size:30px
+    }*/
+    .carousel-inner .item img {left: -50%;}
+    .navbar-collapse.in {overflow-y: visible!important;}
+    .header {height: auto!important;}
+    .navbar-collapse {margin-bottom: 10px;}
+    .l40 {left: -50%!important;}
+    .slide_partner .row {margin-right: 0;}
+    .marketing .row {margin-right: 0!important;}
+    .marketing .col-lg-4 img {max-width: 100%;}
+    .marketing .col-lg-4 {padding-right: 0!important;}
+    span.social {display: block!important;}
+    p.pull-right {float:none!important;}
+    .header .container {margin-top: 5px!important;}
+    .header .logo {margin-top: 15px; margin-left: 10px;} 
+    .client {margin-right: 5px; padding-left: 0!important; padding-right: 0!important;}
+    .slide_partner {margin-bottom: 10px!important;}
+    .carousel {
+  height: 250px;
+  margin-bottom: 20px;
+  width: auto;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 250px;
+  background-color: #fff;
+  width: auto;
+}
+.carousel-inner .item img {
+    height: 250px!important;
+    left: 0;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    width: auto;
+}
+.carousel-inner .item img {left: -50%!important;}
+}
+@media (max-width:1200px) {
+  .marketing .col-lg-4 {text-align: center!important;} 
+  .carousel-inner .item img {left: -30%;}
+  .carousel-inner .item a img {width:auto; max-width: none!important;}
+}

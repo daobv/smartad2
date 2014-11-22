@@ -51,7 +51,7 @@
     text-shadow: none;
   }
   .navbar-nav {
-    margin: 5px -15px 0px;
+    margin: 0px 0px 0px;
   }
   .navbar-nav .open .dropdown-menu.notification {
     min-width: 270px;

@@ -6452,9 +6452,9 @@ fieldset[disabled] .btn-yellow.active {
 }
 /* Content */
 #content {
-  background-color: #f5f6f6;
+
   margin-top: 0;
-  min-height: 800px;
+  min-height: 700px;
   padding-bottom: 30px;
   /* Page Header */
 

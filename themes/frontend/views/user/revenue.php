@@ -100,8 +100,7 @@
 <div class="row" style="margin-left: 0px;
 margin-right: 0px;">
     <!-- STATISTICS -->
-    <div class="col-md-12">
-        <div class="row">
+
             <div class="col-md-6">
                 <div class="box border inverse">
                     <div class="box-title">
@@ -156,8 +155,7 @@ margin-right: 0px;">
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+
     <!-- /STATISTICS -->
     <div class="col-md-6">
 

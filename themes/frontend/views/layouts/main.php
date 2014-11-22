@@ -40,32 +40,44 @@
 
 <!-- PAGE -->
 <section id="page">
-<!-- SIDEBAR -->
-<!-- /SIDEBAR -->
-<div id="main-content">
-<div class="container">
-<div class="row">
-<div id="content" class="col-lg-12">
-<!-- PAGE HEADER-->
-<div class="row">
-    <div class="col-sm-12">
-        <?php $this->widget("PageLogo");?>
-    </div>
-</div>
-    <div class="row">
-        <div class="col-sm-12 breadcrumb-container">
-            <?php $this->widget("BreadCrumb");?>
-        </div>
-    </div>
-<!-- /PAGE HEADER -->
-<!-- HERO GRAPH -->
-<?php echo $content; ?>
-<!-- /CALENDAR & CHAT -->
-</div>
-</div>
-</div>
-</div>
+    <!-- SIDEBAR -->
+    <!-- /SIDEBAR -->
+    <div id="main-content">
+        <div class="container">
+            <div class="row">
+                <div id="content" class="col-lg-12">
+                    <!-- PAGE HEADER-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <?php $this->widget("PageLogo"); ?>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 breadcrumb-container">
+                            <?php $this->widget("BreadCrumb"); ?>
+                        </div>
+                    </div>
+                    <!-- /PAGE HEADER -->
+                    <!-- HERO GRAPH -->
+                    <?php echo $content; ?>
+                    <!-- /CALENDAR & CHAT -->
+                </div>
 
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="pull-right"><a href="/nha_quang_cao.html">Nhà quảng cáo</a> | <a
+                    href="/nguoi_tiep_thi.html">Người tiếp thị</a> | <a href="/lien_he.html"> Liên hệ </a>
+                            <span class="social"><a href=""><i class="fa fa-facebook"></i></a><a href=""><i
+                                        class="fa fa-twitter"></i></a><a href=""><i
+                                        class="fa fa-google-plus"></i></a></span></p>
+
+            <p>Copyright © 2014 SmartAd Company </p>
+        </div>
+    </footer>
 </section>
 <!--/PAGE -->
 <!-- JAVASCRIPTS -->

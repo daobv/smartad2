@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-4">
-
+            <h4 style="margin-top: 20px;margin-bottom: 20px"><i class="fa fa-user"> </i> Đăng Nhập <i style="float: left; padding-top: 6px"></i> </h4>
             <?php $form=$this->beginWidget('CActiveForm', array(
                 'id'=>'login-form',
                 'enableClientValidation'=>true,

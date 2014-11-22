@@ -1,6 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
+            <h4 style="margin-top: 20px;margin-bottom: 20px"><i class="fa fa-user"> </i> Đăng Ký Tài Khoản <i style="float: left; padding-top: 6px"></i> </h4>
             <div class="col-md-6" style="padding-left: 0px">
                 <?php $form=$this->beginWidget('CActiveForm', array(
                     'id'=>'user-form',
@@ -97,7 +98,7 @@
             </div>
             <div class="col-md-5 text-right">
                 <div class="image_register">
-                    <img src="http://pub.adflex.vn/default/images/img_phone.png" class="img-responsive">
+
                 </div>
             </div>
         </div>

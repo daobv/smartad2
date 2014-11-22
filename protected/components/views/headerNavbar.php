@@ -38,8 +38,7 @@
                 <!-- BEGIN USER LOGIN DROPDOWN -->
                 <li class="dropdown user" id="header-user">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img alt="" class="fa fa-user"/>
-                        <span class="username"><?php echo Yii::app()->user->name; ?></span>
+                        <span class="username">Xin chào, <?php echo Yii::app()->user->name; ?></span>
                         <i class="fa fa-angle-down"></i>
                     </a>
                     <ul class="dropdown-menu">
@@ -57,6 +56,12 @@
             </ul>
         <?php else: ?>
             <ul class="nav navbar-nav pull-right">
+                <li class="dropdown user" id="header-user">
+                    <a href="<?php echo Yii::app()->createUrl("user/register"); ?>" class="dropdown-toggle">
+                        <span class="username">Đăng Ký</span>
+
+                    </a>
+                </li>
                 <li class="dropdown user" id="header-user">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <span class="username">Đăng Nhập</span>

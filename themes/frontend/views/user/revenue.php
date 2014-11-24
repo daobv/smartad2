@@ -135,21 +135,21 @@ margin-right: 0px;">
                     <div class="box-body">
                         <div class="sparkline-row">
                             <span class="title">Hôm Nay</span>
-                            <span class="value"><?php if($todayPercent) printf("0.2f",$todayPercent->success/$todayPercent->day_click); else echo " 0.00% " ?></span>
+                            <span class="value"><?php if($todayPercent) echo number_format((float)$todayPercent->success/$todayPercent->day_click, 2, '.', '')."%"; else echo " 0.00% " ?></span>
                             <span class="sparklinepie"><?php echo $percent;?></span>
                         </div>
                         <?php $percent = "0,100"; ?>
                         <?php if($thisWeekPercent) $percent = $thisWeekPercent->success.",".$thisWeekPercent->day_click; ?>
                         <div class="sparkline-row">
                             <span class="title">Tuân Này</span>
-                            <span class="value"><?php if($thisWeekPercent) printf("0.2f",$thisWeekPercent->success/$thisWeekPercent->day_click); else echo " 0.00% " ?></span>
+                            <span class="value"><?php if($thisWeekPercent) echo number_format((float)$thisWeekPercent->success/$thisWeekPercent->day_click, 2, '.', '')."%"; else echo " 0.00% " ?></span>
                             <span class="sparklinepie"><?php echo $percent;?></span>
                         </div>
                         <?php $percent = "0,100"; ?>
                         <?php if($thisMonth) $percent = $thisMonth->success.",".$thisMonth->day_click; ?>
                         <div class="sparkline-row">
                             <span class="title">Tháng Này</span>
-                            <span class="value"><?php if($thisMonth) printf("0.2f",$thisMonth->success/$thisMonth->day_click); else echo " 0.00% " ?></span>
+                            <span class="value"><?php if($thisMonth) echo number_format((float)$thisMonth->success/$thisMonth->day_click, 2, '.', '')."%"; else echo " 0.00% " ?></span>
                             <span class="sparklinepie"><?php echo $percent;?></span>
                         </div>
                     </div>

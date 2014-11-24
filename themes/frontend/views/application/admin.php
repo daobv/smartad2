@@ -5,7 +5,7 @@
 ?>
 <script
     src="<?php echo Yii::app()->theme->baseUrl ?>/js/jquery/jquery.js"></script>
-<div class="container">
+<div class="container" style="width: 100% !important;">
     <div class="row">
         <div class="col-md-12">
             <div class="box ">

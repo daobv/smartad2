@@ -31,11 +31,11 @@
                 <?php echo $value['day_click']; ?>
             </td>
             <td class="hidden-xs">
-                <?php if($value['success']== 0):?>
+                <?php if($value['success']== 0 || $value['day_click'] ==0):?>
                     0.00%
                 <?php else: ?>
                     <?php printf("%0.2f",(float)$value['success']/$value['day_click']);?>%
-                <?php endif;?>
+                <?php endif; ?>
             </td>
             <td>
                 <?php printf("%3.0f",$value['revenue']);?> VNĐ

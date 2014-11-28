@@ -243,6 +243,7 @@ class UserController extends Controller
         $dateParams = array();
         $clickArray = array();
         $actionArray = array();
+        $revenueArray = array();
         //$interactions = Interaction::model()->getInteractionByDate($userId,$from,$to);
         while($from <=  $to){
             $interaction = Interaction::model()->getInteractionByDate($userId,$from,$from);
@@ -251,11 +252,13 @@ class UserController extends Controller
                 $dateParams[] = $daySplit[2]."/".$daySplit[1];
                 $clickArray[] = (int)0;
                 $actionArray[] = (int)0;
+                $revenueArray[] = (int)0;
             }else{
                 $daySplit = str_split($interaction->date,2);
                 $dateParams[] = $daySplit[2]."/".$daySplit[1];
                 $clickArray[] = (int)$interaction->day_click;
                 $actionArray[] = (int)$interaction->success;
+                $revenueArray[] = (int)$interaction->revenue;
             }
             $date = date('Y',time());
             $dateParam = $date."-".$daySplit[1]."-".$daySplit[2];
@@ -277,6 +280,7 @@ class UserController extends Controller
         $this->render('revenue',array('todayRevenue'=>$todayRevenue,
             'dateParams'=>$dateParams,'clickArray'=>$clickArray,
             'actionArray'=>$actionArray,
+            'revenueArray'=>$revenueArray,
             'weekRevenue'=>$weekRevenue,
             'todayPercent'=>$todayPercent,
             'thisWeekPercent'=>$thisWeekPercent,

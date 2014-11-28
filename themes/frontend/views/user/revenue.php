@@ -2,12 +2,19 @@
     <div class="col-md-12"
          style="margin-top: 30px;">
         <div class="col-md-12" style="padding-left: 0px">
-            <div class="col-md-6" style="padding-left: 0px">
+            <div class="col-md-4" style="padding-left: 0px">
                 <h4 class="header-box-db" style="margin-top: 1px"><i class="fa fa-bar-chart-o"></i> THỐNG KÊ DOANH
                     THU </h4>
 
             </div>
-            <div class="col-md-6" style="margin-right: 0px">
+            <div class="col-md-4" style="padding-left: 0px; padding-bottom: 10px">
+                <?php $sumAction = 0;$sumClick = 0;$sumRevenue = 0;?>
+                <?php foreach($actionArray as $action){$sumAction+=$action;}?>
+                <?php foreach($clickArray as $click){$sumClick+=$click;}?>
+                <?php foreach($revenueArray as $revenue){$sumRevenue+=$revenue;}?>
+                Action: <?php echo $sumAction; ?> | Click: <?php echo $sumClick; ?> | Doanh thu: <?php printf("%3.0f",$sumRevenue); ?> VNĐ
+            </div>
+            <div class="col-md-4" style="padding-left: 0px;">
                 <form class="form-inline" id="report_form" method="get">
                     <div class="input-prepend input-append"
                          style="display: inline-block; margin: 0px; height: 30px;  margin-right: 5px;">
@@ -72,7 +79,10 @@
                         return  day_get + month_get + year_get;
                     }
                 </script>
+
             </div>
+
+
         </div>
         <div id="chart_div" data-highcharts-chart="0">
             <?php
@@ -131,25 +141,25 @@ margin-right: 0px;">
                         <h4><i class="fa fa-adjust"></i>Tỉ Lệ Action </h4>
                     </div>
                     <?php $percent = "0,100"; ?>
-                    <?php if($todayPercent) $percent = $todayPercent->success.",".$todayPercent->day_click; ?>
+                    <?php if($todayPercent && $todayPercent->day_click!=0) $percent = $todayPercent->success.",".$todayPercent->day_click; ?>
                     <div class="box-body">
                         <div class="sparkline-row">
                             <span class="title">Hôm Nay</span>
-                            <span class="value"><?php if($todayPercent) echo number_format((float)$todayPercent->success/$todayPercent->day_click, 2, '.', '')."%"; else echo " 0.00% " ?></span>
+                            <span class="value"><?php if($todayPercent && $todayPercent->day_click != 0) echo number_format((float)$todayPercent->success/$todayPercent->day_click, 2, '.', '')."%"; else echo " 0.00% " ?></span>
                             <span class="sparklinepie"><?php echo $percent;?></span>
                         </div>
                         <?php $percent = "0,100"; ?>
-                        <?php if($thisWeekPercent) $percent = $thisWeekPercent->success.",".$thisWeekPercent->day_click; ?>
+                        <?php if($thisWeekPercent && $thisWeekPercent->day_click !=0) $percent = $thisWeekPercent->success.",".$thisWeekPercent->day_click; ?>
                         <div class="sparkline-row">
                             <span class="title">Tuân Này</span>
-                            <span class="value"><?php if($thisWeekPercent) echo number_format((float)$thisWeekPercent->success/$thisWeekPercent->day_click, 2, '.', '')."%"; else echo " 0.00% " ?></span>
+                            <span class="value"><?php if($thisWeekPercent && $thisWeekPercent->day_click !=0) echo number_format((float)$thisWeekPercent->success/$thisWeekPercent->day_click, 2, '.', '')."%"; else echo " 0.00% " ?></span>
                             <span class="sparklinepie"><?php echo $percent;?></span>
                         </div>
                         <?php $percent = "0,100"; ?>
                         <?php if($thisMonth) $percent = $thisMonth->success.",".$thisMonth->day_click; ?>
                         <div class="sparkline-row">
                             <span class="title">Tháng Này</span>
-                            <span class="value"><?php if($thisMonth) echo number_format((float)$thisMonth->success/$thisMonth->day_click, 2, '.', '')."%"; else echo " 0.00% " ?></span>
+                            <span class="value"><?php if($thisMonth && $thisMonth->day_click != 0) echo number_format((float)$thisMonth->success/$thisMonth->day_click, 2, '.', '')."%"; else echo " 0.00% " ?></span>
                             <span class="sparklinepie"><?php echo $percent;?></span>
                         </div>
                     </div>
